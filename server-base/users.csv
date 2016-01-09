@@ -1,0 +1,11 @@
+TestJazzAdmin2,TestJazzAdmin2,unknown,[com.ibm.team.rtc.developer],[JazzAdmins],0
+TestJazzUser1,TestJazzUser1,unknown,[com.ibm.team.rtc.developer],[JazzUsers],0
+TestJazzUser2,TestJazzUser2,unknown,[com.ibm.team.rtc.developer],[JazzUsers],0
+TestJazzGuest1,TestJazzGuest1,unknown,[com.ibm.team.rtc.developer],[JazzGuests],0
+TestJazzGuest2,TestJazzGuest2,unknown,[com.ibm.team.rtc.developer],[JazzGuests],0
+TestJazzProjectAdmin1,TestJazzProjectAdmin1,unknown,[com.ibm.team.rtc.developer],[JazzProjectAdmins],0
+TestJazzProjectAdmin2,TestJazzProjectAdmin2,unknown,[com.ibm.team.rtc.developer],[JazzProjectAdmins],0
+TestJazzNoGroups,TestJazzNoGroups,unknown,[com.ibm.team.rtc.developer],[JazzUsers],0
+TestJazzArchivedAdmin,TestJazzArchivedAdmin,unknown,,[JazzAdmins],0
+TestJazzArchivedUser,TestJazzArchivedUser,unknown,,[JazzUsers],0
+

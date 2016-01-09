@@ -1,0 +1,6 @@
+*.zip
+*.tar.gz
+.vagrant/
+Disk1/
+oracle-driver/
+BACKUP/

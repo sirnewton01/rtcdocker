@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.ibm.team.docker.feature_0.1.2.201510182003.jar" id="com.ibm.team.docker.feature" version="0.1.2.201510182003">
+      <category name="docker"/>
+   </feature>
+   <category-def name="docker" label="Docker"/>
+</site>

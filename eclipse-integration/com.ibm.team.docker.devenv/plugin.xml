@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="com.ibm.team.docker.devenv.contribution2"
+            objectClass="org.eclipse.core.resources.IProject">
+         <menu
+               label="RTC Docker"
+               path="additions"
+               id="com.ibm.team.docker.devenv.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.ibm.team.docker.devenv.popup.actions.DeployPluginsAction"
+               enablesFor="1"
+               id="com.ibm.team.docker.devenv.newAction"
+               label="Deploy Server Plugins"
+               menubarPath="com.ibm.team.docker.devenv.menu1/group1">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="true"
+            id="com.ibm.team.docker.devenv.objectContribution1"
+            objectClass="org.eclipse.jdt.core.ICompilationUnit">
+         <menu
+               id="com.ibm.team.docker.devenv.menu1"
+               label="RTC Docker"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.ibm.team.docker.devenv.popup.actions.HotSwapAction"
+               id="com.ibm.team.docker.devenv.swapCode"
+               label="Hot Swap"
+               menubarPath="com.ibm.team.docker.devenv.menu1/group1">
+         </action>
+      </objectContribution>
+      <objectContribution
+            adaptable="false"
+            id="com.ibm.team.docker.devenv.objectContribution2"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="com.ibm.team.docker.devenv.menu1"
+               label="RTC Docker"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="com.ibm.team.docker.devenv.popup.actions.HotSwapWebAction"
+               id="com.ibm.team.docker.devenv.swapWeb"
+               label="Hot Swap"
+               menubarPath="com.ibm.team.docker.devenv.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

@@ -1,0 +1,11 @@
+rtc:
+  image: rtc-oracle:502
+  links:
+   - db:oracle
+  ports:
+   - "9443:9443"
+   - "8000:8000"
+   - "9000:9000"
+db:
+  image: oracle:1120
+

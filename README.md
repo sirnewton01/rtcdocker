@@ -15,6 +15,7 @@ New and updated bundles can be deployed to the server using a special
 eclipse plugin. Changes to java code can be hot swapped into the running
 server.
 
+
 Getting Started
 ---------------
 

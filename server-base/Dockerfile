@@ -34,7 +34,8 @@ ADD ccmserver /ccmserver
 #  on port 8000 (not good for prod systems, but this isn't intended for production
 #  in its current form). 
 # Tomcat
-RUN if [ ! -e "/ccmserver/server/liberty" ]; then sed -i 's/exec "$PRGDIR"\/"$EXECUTABLE" start "$@"/exec "$PRGDIR"\/"$EXECUTABLE" jpda run "$@"/g' /ccmserver/server/tomcat/bin/startup.sh; fi
+RUN if [ ! -e "/ccmserver/server/liberty" ]; then sed -i 's/exec "$PRGDIR"\/"$EXECUTABLE" start "$@"/exec "$PRGDIR"\/"$EXECUTABLE" run "$@"/g' /ccmserver/server/tomcat/bin/startup.sh; fi
+RUN if [ ! -e "/ccmserver/server/liberty" ]; then sed -i 's/$CATALINA_HOME\/bin\/catalina.sh jpda start/$CATALINA_HOME\/bin\/catalina.sh jpda run/g' /ccmserver/server/server.startup; fi
 # Liberty
 RUN if [ -e "/ccmserver/server/liberty" ]; then sed -i 's/suspend=y/suspend=n/g' /ccmserver/server/liberty/wlp/bin/server; fi
 

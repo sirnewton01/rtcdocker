@@ -6,14 +6,7 @@ if [ -f /install.sh ]; then
 fi
 
 cd /ccmserver/server
-# Tomcat
-if [ ! -e "/ccmserver/server/liberty" ]; then 
-	./server.startup &
-fi
-# Liberty
-if [ -e "/ccmserver/server/liberty" ]; then
-	./server.startup -debug &
-fi
+./server.startup -debug &
 serverPid=$!
 
 # TODO re-enable this once the signals can be trapped from the docker stop command.
